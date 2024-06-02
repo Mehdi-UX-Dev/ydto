@@ -31,3 +31,24 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes typing {
+  0% {
+    width: 0%;
+    visibility: hidden;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: black;
+  }
+}
+.animate-typing {
+  animation: typing 3s steps(80), blink 0.7s infinite;
+}
