@@ -15,7 +15,7 @@ function Page() {
         transition={{ delay: 2, duration: 1 }}
         className="flex justify-center items-center h-[calc(100vh-150px)]  overflow-hidden "
       >
-        <h1 className="  text-[32px] ">
+        <h1 className="  text-[32px] text-center ">
           Pardon Our Dust, We&apos;re Crafting a New Website!
         </h1>
       </motion.div>
