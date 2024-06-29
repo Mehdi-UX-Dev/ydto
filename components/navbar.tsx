@@ -10,15 +10,15 @@ function Navbar() {
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, ease: easeOut }}
-      className="pt-6 px-6 flex items-center justify-between"
+      className=" flex items-center justify-between mx-6"
     >
       <h1 className="font-bold  lg:text-[48px]">YDTDO.org</h1>
       <div className="md:flex  items-center gap-4 hidden">
         <DropdownComponent />
-        <Link href={"#"} className="text-[24px]">
+        <Link href={"#"} className="lg:text-[24px]">
           About Us
         </Link>
-        <Link href={"#"} className="text-[24px]">
+        <Link href={"#"} className="lg:text-[24px]">
           Contact Us
         </Link>
       </div>

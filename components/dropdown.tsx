@@ -18,7 +18,7 @@ export function DropdownComponent() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-[24px]">
+          <NavigationMenuTrigger className="lg:text-[24px]">
             Programs
           </NavigationMenuTrigger>
           <NavigationMenuContent>
