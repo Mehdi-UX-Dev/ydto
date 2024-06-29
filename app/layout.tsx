@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "YDTO.org",
+  title: "YDTDO - Youth Digital Training and Development Organization",
 };
 
 export default function RootLayout({

@@ -2,19 +2,13 @@
 import Image from "next/image";
 import React from "react";
 import { easeOut, motion } from "framer-motion";
+import logo from "@/public/assets/logo.png";
+import Navbar from "@/components/navbar";
 
 function Page() {
   return (
     <div className="">
-      <motion.nav
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, ease: easeOut }}
-        className="pt-6 pl-6"
-      >
-        {/* <Image src={""} alt="" /> */}
-        <h1 className="font-bold text-[48px]">YDTO.org</h1>
-      </motion.nav>
+      <Navbar />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
