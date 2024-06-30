@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "@/components/navbar";
 import HeroSection from "@/components/herosection";
 import Programs from "@/components/Programs";
+import Info from "@/components/info";
 
 function Page() {
   return (
@@ -10,6 +11,7 @@ function Page() {
       <Navbar />
       <HeroSection />
       <Programs />
+      <Info />
     </div>
   );
 }
