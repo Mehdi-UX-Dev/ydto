@@ -28,7 +28,7 @@ function Info() {
 
       <div>
         <section>
-          <h1 className="text-[3rem]">
+          <h1 className="text-[1.5rem] font-bold lg:text-[3rem]">
             Leading the Change: Revolutionizing Afghanistan&apos;s Future
             Through Education
           </h1>
@@ -38,7 +38,7 @@ function Info() {
             social entrepreneurs across Europe and Afghanistan, our bootcamps
             nurture talent, inspire leadership, and drive positive change.
           </p>
-          <div className="flex ">
+          <div className="flex flex-wrap lg:flex-nowrap ">
             <div>
               <div className="flex items-center gap-2">
                 <Image src={growth} alt="" />
@@ -50,8 +50,8 @@ function Info() {
               </p>
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <Image src={growth} alt="" />
+              <div className="flex items-center  gap-2">
+                <Image src={people} alt="" />
                 <h4 className="font-bold text-[1.5rem]">Global Connection</h4>
               </div>
               <p className="max-w-[45ch]">

@@ -4,6 +4,8 @@ import Navbar from "@/components/navbar";
 import HeroSection from "@/components/herosection";
 import Programs from "@/components/Programs";
 import Info from "@/components/info";
+import Partners from "@/components/partners";
+import Team from "@/components/team";
 
 function Page() {
   return (
@@ -12,6 +14,8 @@ function Page() {
       <HeroSection />
       <Programs />
       <Info />
+      <Partners />
+      <Team />
     </div>
   );
 }
