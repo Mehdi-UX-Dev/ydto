@@ -17,7 +17,7 @@ function Team() {
         </p>
       </section>
 
-      <div className="flex  flex-wrap">
+      <div className="flex flex-wrap">
         <Image
           src={map}
           alt="Innovation"
