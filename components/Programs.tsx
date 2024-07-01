@@ -4,7 +4,7 @@ import React from "react";
 function Programs() {
   return (
     <div className="mb-10 grid grid-cols-2 max-w-5xl mx-auto gap-4">
-      <div className="bg-[radial-gradient(circle_at_right,rgba(74,134,232)0%,rgba(252,189,109)_100%)]  border px-10 py-5 h-64 col-span-2 flex items-center gap-4 rounded-[6px]">
+      <div className="bg-[radial-gradient(circle,rgba(74,134,232,1)0%,rgba(74,134,232,0)100%)]  border px-10 py-5 h-64 col-span-2 flex items-center gap-4 rounded-[6px]">
         <GraduationCap size={64} />
         <div className="">
           <h1 className="text-[2rem] font-bold">Academy</h1>
