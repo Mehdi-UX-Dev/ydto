@@ -5,8 +5,8 @@ import HeroImage from "@/public/assets/Growth.png";
 
 function HeroSection() {
   return (
-    <div className="mt-10 min-[912px]:flex items-center mx-6  ">
-      <section className="text-center lg:text-left ">
+    <div className="mt-10 min-[912px]:grid grid-cols-12 items-center mx-6  ">
+      <section className="text-center lg:text-left col-span-6 ">
         <h1 className="font-bold text-[2rem] lg:text-[3rem] px-1 max-w-[25em] mx-auto">
           Nurturing the Next Gen of Afghanistan’s Entrepreneurs & Leaders
         </h1>
@@ -32,7 +32,7 @@ function HeroSection() {
       <Image
         src={HeroImage}
         alt="Hero Image"
-        className="hidden min-[912px]:block w-[600px]"
+        className="hidden min-[912px]:block  col-span-6 "
       />
     </div>
   );

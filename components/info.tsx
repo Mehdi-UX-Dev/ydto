@@ -8,12 +8,12 @@ import startup from "@/public/assets/startup.png";
 function Info() {
   return (
     <div className="space-y-[60px] ">
-      <div className="flex justify-center lg:justify-between mx-6">
-        <section className="text-center lg:text-left">
-          <h1 className="text-[2rem] lg:text-[3rem] font-bold ">
+      <div className="grid grid-cols-12 mx-6">
+        <section className="text-center lg:text-left col-span-12 lg:col-span-6">
+          <h1 className="text-[2rem] lg:text-[3rem] font-bold  ">
             Youth Potential Unleashed By Entrepreneurship
           </h1>
-          <p className=" max-w-prose mx-auto lg:mx-0 ">
+          <p className=" mx-auto lg:mx-0 ">
             We support local talent who want to create positive impact and lead
             Afghanistan with technical skills and digital innovation.
           </p>
@@ -22,7 +22,7 @@ function Info() {
         <Image
           src={illus1}
           alt="Innovation"
-          className=" max-w-[500px] hidden lg:block"
+          className="  hidden lg:block lg:col-span-6 justify-self-center"
         />
       </div>
 
@@ -40,7 +40,7 @@ function Info() {
           </p>
           <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start gap-4 mt-4">
             <div>
-              <div className="flex items-center justify-center md:justify-start gap-2">
+              <div className="flex items-center justify-center lg:justify-start  gap-2">
                 <Image src={growth} alt="" />
                 <h4 className="font-bold text-[1.5rem]">Career Potential</h4>
               </div>
