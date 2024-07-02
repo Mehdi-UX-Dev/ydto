@@ -32,7 +32,7 @@ function HeroSection() {
       <Image
         src={HeroImage}
         alt="Hero Image"
-        className="hidden min-[912px]:block "
+        className="hidden min-[912px]:block w-[600px]"
       />
     </div>
   );

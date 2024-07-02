@@ -7,13 +7,13 @@ import startup from "@/public/assets/startup.png";
 
 function Info() {
   return (
-    <div>
-      <div className="flex justify-center lg:justify-between mx-6">
+    <div className="space-y-[60px]">
+      <div className="flex justify-center lg:justify-betwee mx-6">
         <section className="text-center lg:text-left">
-          <h1 className="text-[2rem] lg:text-[3rem] font-bold lg:w-[15em]">
+          <h1 className="text-[2rem] lg:text-[3rem] font-bold ">
             Youth Potential Unleashed By Entrepreneurship
           </h1>
-          <p className="lg:w-[35em] max-w-prose mx-auto lg:mx-0 ">
+          <p className=" max-w-prose mx-auto lg:mx-0 ">
             We support local talent who want to create positive impact and lead
             Afghanistan with technical skills and digital innovation.
           </p>
@@ -27,8 +27,8 @@ function Info() {
       </div>
 
       <div>
-        <section>
-          <h1 className="text-[1.5rem] font-bold lg:text-[3rem]">
+        <section className="text-center lg:text-left">
+          <h1 className="text-[1.5rem] font-bold lg:text-[3rem] ">
             Leading the Change: Revolutionizing Afghanistan&apos;s Future
             Through Education
           </h1>
@@ -38,9 +38,9 @@ function Info() {
             social entrepreneurs across Europe and Afghanistan, our bootcamps
             nurture talent, inspire leadership, and drive positive change.
           </p>
-          <div className="flex flex-wrap lg:flex-nowrap ">
+          <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start gap-4 mt-4">
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center md:justify-start gap-2">
                 <Image src={growth} alt="" />
                 <h4 className="font-bold text-[1.5rem]">Career Potential</h4>
               </div>
@@ -50,7 +50,7 @@ function Info() {
               </p>
             </div>
             <div>
-              <div className="flex items-center  gap-2">
+              <div className="flex items-center justify-center lg:justify-start  gap-2">
                 <Image src={people} alt="" />
                 <h4 className="font-bold text-[1.5rem]">Global Connection</h4>
               </div>
@@ -60,7 +60,7 @@ function Info() {
               </p>
             </div>
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
                 <Image src={startup} alt="" />
                 <h4 className="font-bold text-[1.5rem]">
                   Entrepreneurial Mindset
