@@ -12,18 +12,18 @@ const pics = [
 ];
 function Partners() {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row mx-6">
       <section className="text-center lg:text-left">
         <h1 className="text-[2rem] lg:text-[3rem] font-bold lg:w-[15em]">
-          Youth Potential Unleashed By Entrepreneurship
+          Our Partners
         </h1>
         <p className="lg:w-[35em] max-w-prose mx-auto lg:mx-0 ">
-          We support local talent who want to create positive impact and lead
-          Afghanistan with technical skills and digital innovation.
+          We work with and receive funding from amazing partners across
+          government, philanthropy, business, and technology.
         </p>
       </section>
 
-      <div className="flex  flex-wrap">
+      <div className="flex  flex-wrap ">
         {pics.map((image) => (
           <Image
             key={image}

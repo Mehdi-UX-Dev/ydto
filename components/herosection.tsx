@@ -25,7 +25,7 @@ function HeroSection() {
           speed={50}
         />
 
-        <button className="text-white mt-4 border-white border px-4 py-2 rounded-[6px] ">
+        <button className="text-white mt-4 border-white border px-4 w-48 h-14 py-2 rounded-[6px] ">
           Contact Us
         </button>
       </section>

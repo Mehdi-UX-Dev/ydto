@@ -8,7 +8,7 @@ import { Copyright, Phone } from "lucide-react";
 
 function Footer() {
   return (
-    <footer className="px-10 py-10 mt-5 bg-gradient-to-r from-gray-950 to-gray-800">
+    <footer className="px-10 py-10 mt-5 bg-gradient-to-r from-gray-800 to-gray-600">
       <h1 className="text-[2rem] font-bold">YDTDO.org</h1>
       <p>Teaching the DNA of future from Berlin to Kabul</p>
       <div className="flex items-start gap-8 py-5">

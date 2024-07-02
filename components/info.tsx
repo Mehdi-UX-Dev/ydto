@@ -7,8 +7,8 @@ import startup from "@/public/assets/startup.png";
 
 function Info() {
   return (
-    <div className="space-y-[60px]">
-      <div className="flex justify-center lg:justify-betwee mx-6">
+    <div className="space-y-[60px] ">
+      <div className="flex justify-center lg:justify-between mx-6">
         <section className="text-center lg:text-left">
           <h1 className="text-[2rem] lg:text-[3rem] font-bold ">
             Youth Potential Unleashed By Entrepreneurship
@@ -27,16 +27,16 @@ function Info() {
       </div>
 
       <div>
-        <section className="text-center lg:text-left">
+        <section className="text-center lg:text-left mx-6">
           <h1 className="text-[1.5rem] font-bold lg:text-[3rem] ">
             Leading the Change: Revolutionizing Afghanistan&apos;s Future
             Through Education
           </h1>
           <p>
-            At Startupistan, we empower Afghan youth with digital education to
-            lead, innovate, and create a brighter future. As a collective of
-            social entrepreneurs across Europe and Afghanistan, our bootcamps
-            nurture talent, inspire leadership, and drive positive change.
+            we empower Afghan youth with digital education to lead, innovate,
+            and create a brighter future. As a collective of social
+            entrepreneurs across Europe and Afghanistan, our bootcamps nurture
+            talent, inspire leadership, and drive positive change.
           </p>
           <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start gap-4 mt-4">
             <div>
