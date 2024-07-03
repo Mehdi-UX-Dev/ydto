@@ -1,4 +1,4 @@
-import { GraduationCap } from "lucide-react";
+import { Building2, Calendar, GraduationCap } from "lucide-react";
 import React from "react";
 
 function Programs() {
@@ -16,22 +16,22 @@ function Programs() {
       </div>
 
       <div className="border scale-75 md:scale-100 transition-transform duration-150 ease-in-out  col-span-2  lg:col-span-1 border-white  px-10 py-5 h-48 flex items-center gap-4 rounded-[6px]">
-        <GraduationCap size={64} />
+        <Building2 size={64} />
         <div className="">
-          <h1 className="text-[2rem] font-bold">Academy</h1>
+          <h1 className="text-[2rem] font-bold">Business Incubation</h1>
           <p className="">
-            Empowering Afghan youth with cutting-edge tech skills to lead the
-            nation’s digital revolution.
+            Supporting young innovators in solving local challenges through
+            technology-driven startups.
           </p>
         </div>
       </div>
       <div className="border-white scale-75 md:scale-100 transition-transform duration-150 ease-in-out col-span-2 lg:col-span-1  border px-10 py-5 h-48 flex items-center gap-4 rounded-[6px]">
-        <GraduationCap size={64} />
+        <Calendar size={64} />
         <div className="">
-          <h1 className="text-[2rem] font-bold">Academy</h1>
+          <h1 className="text-[2rem] font-bold">Events</h1>
           <p className="">
-            Empowering Afghan youth with cutting-edge tech skills to lead the
-            nation’s digital revolution.
+            Fostering a community of change-makers to create lasting, positive
+            impact in Afghanistan..
           </p>
         </div>
       </div>
