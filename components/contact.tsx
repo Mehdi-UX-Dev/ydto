@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { sendContactForm } from "@/lib/api";
+import { Asterisk } from "lucide-react";
+import { useToast } from "./ui/use-toast";
 
 function Contact() {
   const [values, setEmail] = useState({
@@ -15,12 +16,30 @@ function Contact() {
     email: "",
     message: "",
   });
+  const { toast } = useToast();
 
-  const sendMail: React.FormEventHandler<HTMLFormElement> = (e) => {
+  const sendMail: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-    sendContactForm(values);
-  };
 
+    try {
+      const { success, message } = await sendContactForm(values);
+      console.log(success);
+
+      success
+        ? toast({
+            title: "Sent Successfully",
+            description:
+              "Thank for your message, we will contact you in no time!",
+          })
+        : toast({
+            variant: "destructive",
+            title: "Could not send the message",
+            description: message,
+          });
+    } catch (error: any) {
+      console.error("Error submitting form:", error.message);
+    }
+  };
   return (
     <div
       id="contact"
@@ -39,12 +58,14 @@ function Contact() {
             <div className="">
               <form onSubmit={sendMail} className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="text-gray-300">
-                    Name
+                  <label htmlFor="name" className="text-gray-300 flex ">
+                    <span>Name</span>{" "}
+                    <Asterisk size={16} className="text-red-400" />
                   </label>
                   <input
                     type="text"
                     id="name"
+                    required
                     className="border h-12 w-full bg-gray-700 mt-1"
                     onChange={(e) =>
                       setEmail((cred) => ({ ...cred, name: e.target.value }))
@@ -52,12 +73,14 @@ function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="name" className="text-gray-300">
-                    Email
+                  <label htmlFor="email" className="text-gray-300 flex">
+                    <span> Email </span>
+                    <Asterisk size={16} className="text-red-400" />
                   </label>
                   <input
                     type="email"
-                    id="name"
+                    id="email"
+                    required
                     className="border h-12 w-full bg-gray-700 mt-1"
                     onChange={(e) =>
                       setEmail((cred) => ({ ...cred, email: e.target.value }))
@@ -65,11 +88,13 @@ function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="name" className="text-gray-300">
-                    Message
+                  <label htmlFor="message" className="text-gray-300 flex">
+                    <span>Message</span>
+                    <Asterisk size={16} className="text-red-400" />
                   </label>
                   <textarea
                     id="message"
+                    required
                     className="border w-full h-40 bg-gray-700 mt-1"
                     onChange={(e) =>
                       setEmail((cred) => ({ ...cred, message: e.target.value }))
