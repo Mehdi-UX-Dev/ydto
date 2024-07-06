@@ -16,7 +16,7 @@ function Navbar() {
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, ease: easeOut }}
-      className=" flex items-center justify-between mx-6"
+      className=" flex items-center justify-between mx-6 max-w-[90rem] xl:mx-auto mt-4 lg:mt-8"
     >
       <h1 className="font-bold  lg:text-[48px]">YDTDO.org</h1>
       <div className="md:flex  items-center gap-4 hidden">

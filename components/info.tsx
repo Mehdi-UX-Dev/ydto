@@ -7,7 +7,7 @@ import startup from "@/public/assets/startup.png";
 
 function Info() {
   return (
-    <div id="about" className="space-y-[60px] ">
+    <div id="about" className="space-y-[240px] ">
       <div className="grid grid-cols-12 mx-6">
         <section className="text-center lg:text-left col-span-12 lg:col-span-6">
           <h1 className="text-[1.5rem] lg:text-[2rem] font-bold  ">

@@ -3,8 +3,8 @@ import React from "react";
 
 function Programs() {
   return (
-    <div className="mb-10 grid grid-cols-2 max-w-5xl xl:mx-auto mx-6  gap-4">
-      <div className="scale-75 md:scale-100 transition-transform duration-150 ease-in-out  bg-[radial-gradient(circle,rgba(74,134,232,1)0%,rgba(74,134,232,0)100%)]  border px-10 py-5 h-64 col-span-2 flex items-center gap-4 rounded-[6px]">
+    <div className=" grid grid-cols-2 max-w-5xl xl:mx-auto mx-6  gap-8">
+      <div className="scale-75 md:scale-100 transition-transform duration-150 ease-in-out  bg-[radial-gradient(circle,rgba(74,134,232,1)0%,rgba(74,134,232,0)100%)] py-20  border px-10  col-span-2 flex  gap-4 rounded-[6px]">
         <GraduationCap size={64} />
         <div className="">
           <h1 className="text-[2rem] font-bold">Academy</h1>
@@ -15,7 +15,7 @@ function Programs() {
         </div>
       </div>
 
-      <div className="border scale-75 md:scale-100 transition-transform duration-150 ease-in-out  col-span-2  lg:col-span-1 border-white  px-10 py-5 h-48 flex items-center gap-4 rounded-[6px]">
+      <div className="border scale-75 md:scale-100 transition-transform duration-150 ease-in-out  col-span-2  lg:col-span-1 border-white  px-10 py-10  flex  gap-4 rounded-[6px]">
         <Building2 size={64} />
         <div className="">
           <h1 className="text-[2rem] font-bold">Business Incubation</h1>
@@ -25,7 +25,7 @@ function Programs() {
           </p>
         </div>
       </div>
-      <div className="border-white scale-75 md:scale-100 transition-transform duration-150 ease-in-out col-span-2 lg:col-span-1  border px-10 py-5 h-48 flex items-center gap-4 rounded-[6px]">
+      <div className="border-white scale-75 md:scale-100 transition-transform duration-150 ease-in-out col-span-2 lg:col-span-1  border px-10 py-10 flex  gap-4 rounded-[6px]">
         <Calendar size={64} />
         <div className="">
           <h1 className="text-[2rem] font-bold">Events</h1>

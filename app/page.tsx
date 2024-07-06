@@ -12,8 +12,8 @@ import Footer from "@/components/footer";
 function Page() {
   return (
     <>
-      <div className="max-w-[90rem] mx-auto mt-4 lg:mt-8 space-y-[120px] mb-[120px]">
-        <Navbar />
+      <Navbar />
+      <div className="max-w-[90rem] mx-auto mt-10 lg:mt-[80px]  space-y-[240px] mb-[240px]">
         <HeroSection />
         <Programs />
         <Info />
