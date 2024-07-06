@@ -1,6 +1,4 @@
 export const sendContactForm = async (data: any) => {
-  console.log("in the api.ts");
-
   try {
     const response = await fetch("/api/", {
       method: "POST",
