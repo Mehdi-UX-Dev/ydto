@@ -14,10 +14,8 @@ function Partners() {
   return (
     <div className="flex flex-col lg:flex-row mx-6">
       <section className="text-center lg:text-left">
-        <h1 className="text-[2rem] lg:text-[3rem] font-bold lg:w-[15em]">
-          Our Partners
-        </h1>
-        <p className="lg:w-[35em] max-w-prose mx-auto lg:mx-0 ">
+        <h1 className=" lg:text-[2rem] font-bold lg:w-[15em]">Our Partners</h1>
+        <p className="lg:w-[35em] lg:text-[1.5rem] max-w-prose mx-auto lg:mx-0 ">
           We work with and receive funding from amazing partners across
           government, philanthropy, business, and technology.
         </p>

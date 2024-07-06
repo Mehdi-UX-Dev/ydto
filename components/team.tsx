@@ -6,8 +6,8 @@ function Team() {
   return (
     <div className="flex flex-col justify-between lg:flex-row mx-6">
       <section className="text-center lg:text-left">
-        <h1 className="text-[2rem] lg:text-[3rem] font-bold ">Our Team</h1>
-        <p className=" max-w-[25em] mx-auto lg:mx-0 ">
+        <h1 className="lg:text-[2rem]  font-bold ">Our Team</h1>
+        <p className=" max-w-[25em] text-[1.5rem] mx-auto lg:mx-0 ">
           We are a team of social entrepreneurs scattered across Europe and
           Afghanistan - united by our mission to promote empowerment through
           digital education for youth around the world. We believe in the

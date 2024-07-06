@@ -10,10 +10,10 @@ function Info() {
     <div id="about" className="space-y-[60px] ">
       <div className="grid grid-cols-12 mx-6">
         <section className="text-center lg:text-left col-span-12 lg:col-span-6">
-          <h1 className="text-[2rem] lg:text-[3rem] font-bold  ">
+          <h1 className="text-[1.5rem] lg:text-[2rem] font-bold  ">
             Youth Potential Unleashed By Entrepreneurship
           </h1>
-          <p className=" mx-auto lg:mx-0 ">
+          <p className="mx-auto lg:mx-0 lg:text-[1.5rem]">
             We support local talent who want to create positive impact and lead
             Afghanistan with technical skills and digital innovation.
           </p>
@@ -32,7 +32,7 @@ function Info() {
             Leading the Change: Revolutionizing Afghanistan&apos;s Future
             Through Education
           </h1>
-          <p>
+          <p className="lg:text-[1.5rem]">
             we empower Afghan youth with digital education to lead, innovate,
             and create a brighter future. As a collective of social
             entrepreneurs across Europe and Afghanistan, our bootcamps nurture
@@ -42,7 +42,7 @@ function Info() {
             <div>
               <div className="flex items-center justify-center lg:justify-start  gap-2">
                 <Image src={growth} alt="" />
-                <h4 className="font-bold text-[1.5rem]">Career Potential</h4>
+                <h4 className="font-bold lg:text-[2rem]">Career Potential</h4>
               </div>
               <p className="max-w-[45ch]">
                 Acquire the skills that top employers demand, opening doors to
@@ -52,7 +52,7 @@ function Info() {
             <div>
               <div className="flex items-center justify-center lg:justify-start  gap-2">
                 <Image src={people} alt="" />
-                <h4 className="font-bold text-[1.5rem]">Global Connection</h4>
+                <h4 className="font-bold lg:text-[2rem]">Global Connection</h4>
               </div>
               <p className="max-w-[45ch]">
                 Expand your network and collaborate with peers and mentors
@@ -62,7 +62,7 @@ function Info() {
             <div>
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <Image src={startup} alt="" />
-                <h4 className="font-bold text-[1.5rem]">
+                <h4 className="font-bold lg:text-[2rem]">
                   Entrepreneurial Mindset
                 </h4>
               </div>
