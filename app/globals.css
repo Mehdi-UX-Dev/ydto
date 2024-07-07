@@ -43,13 +43,13 @@
   }
 }
 
-.button-content {
+/* .button-content {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
   padding: 0 6px;
-}
+} */
 
 .highlight {
   position: absolute;
@@ -67,7 +67,7 @@
   animation: collaboration-button_backgroundAnim__BC9W2 8s ease-in-out infinite;
 }
 
-.text {
+.highlight:after {
   content: "";
   position: absolute;
   background-size: inherit;
@@ -77,7 +77,20 @@
   right: 0;
   top: 2px;
   height: 100%;
-  filter: blur(0.5rem);
+  filter: blur(0.75rem);
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes collaboration-button_backgroundAnim__BC9W2 {

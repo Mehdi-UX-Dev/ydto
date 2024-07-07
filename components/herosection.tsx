@@ -24,14 +24,12 @@ function HeroSection() {
           speed={50}
         />
 
-        <button className="text-foreground mt-8 text-[1.5rem] border-foreground border px-5 w-48  rounded-[6px] py-3">
+        {/* <button className="text-foreground mt-8 text-[1.5rem] border-foreground border px-5 w-48  rounded-[6px] py-3">
           Contact Us
-        </button>
-        <button className="w-40 h-20 relative ">
-          <span className="button-content">
-            <span className="highlight "></span>
-            <span className="text">Collaborate on a Pro Trial</span>
-          </span>
+        </button> */}
+        <button className="w-64 h-20 relative mt-10 cursor-pointer">
+          <span className="highlight "></span>
+          <span className="text text-[1.5rem]">Contact Us</span>
         </button>
       </section>
       <Image
