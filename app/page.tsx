@@ -13,7 +13,7 @@ function Page() {
   return (
     <>
       <Navbar />
-      <div className="max-w-[90rem] mx-auto mt-10 lg:mt-[80px]  space-y-[240px] mb-[240px]">
+      <div className=" mt-10 lg:mt-[80px]  space-y-[240px] mb-[240px]">
         <HeroSection />
         <Programs />
         <Info />

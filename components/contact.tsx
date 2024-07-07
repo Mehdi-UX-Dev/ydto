@@ -50,7 +50,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="scale-75 md:scale-100 transition-transform duration-150 ease-in-out bg-[radial-gradient(circleat25%_50%,rgba(74,134,232,1)0%,rgba(74,134,232,0)70%),radial-gradient(circleat75%50%,rgba(255,0,0,1)0%,rgba(255,0,0,0)70%)] border border-white max-w-3xl mx-auto text-center p-10"
+      className=" scale-75 md:scale-100 transition-transform duration-150 ease-in-out bg-[radial-gradient(circleat25%_50%,rgba(74,134,232,1)0%,rgba(74,134,232,0)70%),radial-gradient(circleat75%50%,rgba(255,0,0,1)0%,rgba(255,0,0,0)70%)] border border-white max-w-3xl mx-auto text-center p-10"
     >
       <h1 className="text-[2.5rem] font-bold ">Have a question?</h1>
       <p className="lg:text-[1.5rem]">

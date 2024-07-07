@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 const pics = [
@@ -42,7 +42,7 @@ const pics = [
 
 const Slider = () => {
   return (
-    <div className="flex">
+    <div className="flex max-w-[90rem] mx-auto">
       <section className="text-center lg:text-left">
         <h1 className=" lg:text-[2rem] font-bold lg:w-[15em]">Our Partners</h1>
         <p className="lg:w-[35em] lg:text-[1.5rem] max-w-prose mx-auto lg:mx-0 ">
@@ -69,8 +69,6 @@ const Slider = () => {
             </div>
           ))}
         </motion.div>
-        {/* <div className="absolute inset-y-0 left-0 w-12 pointer-events-none z-10 bg-gradient-to-r from-white to-transparent"></div>
-        <div className="absolute inset-y-0 right-0 w-12 pointer-events-none z-10 bg-gradient-to-l from-white to-transparent"></div> */}
       </div>
     </div>
   );
