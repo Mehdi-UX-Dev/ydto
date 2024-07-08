@@ -7,7 +7,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { sendContactForm } from "@/lib/api";
-import { Asterisk, X } from "lucide-react";
+import { Asterisk, LoaderCircle, X } from "lucide-react";
 import { useToast } from "./ui/use-toast";
 
 function Contact() {
@@ -18,9 +18,11 @@ function Contact() {
   });
   const { toast } = useToast();
   const [dialog, setDialogVisiblity] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const sendMail: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const { success, message } = await sendContactForm(values);
@@ -32,12 +34,14 @@ function Contact() {
             "Thank for your message, we will contact you in no time!",
         });
         setDialogVisiblity(false);
+        setLoading(false);
       } else {
         toast({
           variant: "destructive",
           title: "Could not send the message",
           description: message,
         });
+        setLoading(false);
       }
     } catch (error: any) {
       toast({
@@ -122,10 +126,15 @@ function Contact() {
                   />
                 </div>
                 <button
+                  disabled={loading}
                   type="submit"
-                  className="w-full bg-gray-600 h-12 rounded-[8px]"
+                  className="w-full disabled:bg-gray-400 disabled:opacity-50 bg-gray-600 h-12 rounded-[8px] flex justify-center items-center gap-2 "
                 >
-                  Submit
+                  {loading ? (
+                    <LoaderCircle className={`h-5 w-5 animate-spin `} />
+                  ) : (
+                    <p>Submit</p>
+                  )}
                 </button>
               </form>
             </div>
