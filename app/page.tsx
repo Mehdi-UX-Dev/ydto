@@ -8,19 +8,25 @@ import Partners from "@/components/partners";
 import Team from "@/components/team";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import { motion } from "framer-motion";
 
 function Page() {
   return (
     <>
       <Navbar />
-      <div className=" mt-10 lg:mt-[80px]  space-y-[240px] mb-[240px]">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, ease: "easeInOut", delay: 2 }}
+        className=" mt-10 lg:mt-[80px]  space-y-[240px] mb-[240px]"
+      >
         <HeroSection />
         <Programs />
         <Info />
         <Partners />
         <Team />
         <Contact />
-      </div>
+      </motion.div>
       <Footer />
     </>
   );

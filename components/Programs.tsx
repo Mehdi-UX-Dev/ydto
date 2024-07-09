@@ -1,10 +1,19 @@
 import { Building2, Calendar, GraduationCap } from "lucide-react";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 function Programs() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.5 });
   return (
-    <div className=" grid grid-cols-2 max-w-5xl xl:mx-auto mx-6  gap-8">
-      <div className="scale-75 md:scale-100 transition-transform duration-150 ease-in-out  bg-[radial-gradient(circle,rgba(74,134,232,1)0%,rgba(74,134,232,0)100%)] py-20  border px-10  col-span-2 flex  gap-4 rounded-[6px]">
+    <div className="grid grid-cols-2 max-w-5xl xl:mx-auto mx-6  gap-8">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0 }}
+        animate={isInView && { opacity: 1 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        className="scale-75 md:scale-100 transition-transform duration-150 ease-in-out  bg-[radial-gradient(circle,rgba(74,134,232,1)0%,rgba(74,134,232,0)100%)] py-20  border px-10  col-span-2 flex gap-4 rounded-[6px]"
+      >
         <GraduationCap size={64} />
         <div className="">
           <h1 className="text-[2rem] font-bold">Academy</h1>
@@ -13,9 +22,15 @@ function Programs() {
             nation’s digital revolution.
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="border scale-75 md:scale-100 transition-transform duration-150 ease-in-out  col-span-2  lg:col-span-1 border-white  px-10 py-10  flex  gap-4 rounded-[6px]">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, x: -100 }}
+        animate={isInView && { opacity: 1, x: 0 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        className="border scale-75 md:scale-100 transition-transform duration-150 ease-in-out  col-span-2  lg:col-span-1 border-white  px-10 py-10  flex  gap-4 rounded-[6px]"
+      >
         <Building2 size={64} />
         <div className="">
           <h1 className="text-[2rem] font-bold">Business Incubation</h1>
@@ -24,8 +39,14 @@ function Programs() {
             technology-driven startups.
           </p>
         </div>
-      </div>
-      <div className="border-white scale-75 md:scale-100 transition-transform duration-150 ease-in-out col-span-2 lg:col-span-1  border px-10 py-10 flex  gap-4 rounded-[6px]">
+      </motion.div>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, x: 100 }}
+        animate={isInView && { opacity: 1, x: 0 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        className="border-white scale-75 md:scale-100 transition-transform duration-150 ease-in-out col-span-2 lg:col-span-1  border px-10 py-10 flex  gap-4 rounded-[6px]"
+      >
         <Calendar size={64} />
         <div className="">
           <h1 className="text-[2rem] font-bold">Events</h1>
@@ -34,7 +55,7 @@ function Programs() {
             impact in Afghanistan..
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
