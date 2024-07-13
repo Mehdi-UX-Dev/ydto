@@ -49,8 +49,8 @@ const Slider = () => {
             Our Partners
           </h1>
           <p className="lg:w-[35em] lg:text-[1.5rem] max-w-prose mx-auto lg:mx-0 ">
-            We work with and receive funding from amazing partners across
-            government, philanthropy, business, and technology.
+            Our work is supported by incredible partners across government,
+            philanthropy, business, and technology.
           </p>
         </section>
         <div className="relative overflow-hidden w-full flex items-center">

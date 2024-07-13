@@ -18,7 +18,7 @@ function Page() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, ease: "easeInOut", delay: 2 }}
-        className=" mt-10 lg:mt-[80px]  space-y-[240px] mb-[240px]"
+        className=" mt-10 lg:mt-[40px]  space-y-[240px] mb-[240px]"
       >
         <HeroSection />
         <Programs />

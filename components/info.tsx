@@ -15,8 +15,8 @@ function Info() {
               Youth Potential Unleashed By Entrepreneurship
             </h1>
             <p className="mx-auto lg:mx-0 lg:text-[1.5rem]">
-              We support local talent who want to create positive impact and
-              lead Afghanistan with technical skills and digital innovation.
+              We support local talent aiming to make a positive impact and lead
+              Afghanistan with technical skills and digital innovation.
             </p>
           </section>
 
@@ -34,21 +34,21 @@ function Info() {
             Leading the Change: Revolutionizing Afghanistan&apos;s Future
             Through Education
           </h1>
-          <p className="lg:text-[1.5rem]">
-            we empower Afghan youth with digital education to lead, innovate,
-            and create a brighter future. As a collective of social
-            entrepreneurs across Europe and Afghanistan, our bootcamps nurture
-            talent, inspire leadership, and drive positive change.
+          <p className="lg:text-[1.5rem] mt-4">
+            Empowering Afghan youth with digital education to lead, innovate,
+            and build a brighter future. Our bootcamps, run by social
+            entrepreneurs across Europe and Afghanistan, nurture talent, inspire
+            leadership, and drive positive change
           </p>
-          <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start gap-4 mt-4">
-            <div>
+          <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start gap-4 mt-20">
+            <div className="">
               <div className="flex items-center justify-center lg:justify-start  gap-2">
                 <Image src={growth} alt="" />
                 <h4 className="font-bold lg:text-[2rem]">Career Potential</h4>
               </div>
-              <p className="max-w-[45ch]">
-                Acquire the skills that top employers demand, opening doors to
-                exciting job opportunities.
+              <p className="max-w-[45ch] mt-4">
+                Gain the skills top employers demand, unlocking exciting job
+                opportunities.
               </p>
             </div>
             <div>
@@ -56,9 +56,9 @@ function Info() {
                 <Image src={people} alt="" />
                 <h4 className="font-bold lg:text-[2rem]">Global Connection</h4>
               </div>
-              <p className="max-w-[45ch]">
+              <p className="max-w-[45ch] mt-4">
                 Expand your network and collaborate with peers and mentors
-                around the world.
+                globally.
               </p>
             </div>
             <div>
@@ -68,9 +68,9 @@ function Info() {
                   Entrepreneurial Mindset
                 </h4>
               </div>
-              <p className="max-w-[45ch]">
-                Learn to think like an entrepreneur and turn your ideas into
-                reality.
+              <p className="max-w-[45ch] mt-4">
+                Cultivate an entrepreneurial mindset and transform your ideas
+                into reality.
               </p>
             </div>
           </div>

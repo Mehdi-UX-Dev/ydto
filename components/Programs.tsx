@@ -18,8 +18,8 @@ function Programs() {
         <div className="">
           <h1 className="text-[2rem] font-bold">Academy</h1>
           <p className="md:w-[35em]">
-            Empowering Afghan youth with cutting-edge tech skills to lead the
-            nation’s digital revolution.
+            Empower Afghan youth with cutting-edge technology skills, preparing
+            them to drive the nation’s digital transformation
           </p>
         </div>
       </motion.div>
@@ -35,7 +35,7 @@ function Programs() {
         <div className="">
           <h1 className="text-[2rem] font-bold">Business Incubation</h1>
           <p className="">
-            Supporting young innovators in solving local challenges through
+            Support young innovators as they tackle local challenges with
             technology-driven startups.
           </p>
         </div>
@@ -51,8 +51,8 @@ function Programs() {
         <div className="">
           <h1 className="text-[2rem] font-bold">Events</h1>
           <p className="">
-            Fostering a community of change-makers to create lasting, positive
-            impact in Afghanistan..
+            Foster a community of change-makers dedicated to creating lasting,
+            positive impacts in Afghanistan.
           </p>
         </div>
       </motion.div>
