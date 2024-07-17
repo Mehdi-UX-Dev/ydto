@@ -3,13 +3,13 @@ import { TypeAnimation } from "react-type-animation";
 
 function HeroSection() {
   return (
-    <div className="max-w-[80rem] lg:mx-auto   items-center mx-6  ">
+    <div className="max-w-[80rem] lg:mx-auto   items-center mx-6 h-[75vh] flex flex-col justify-center ">
       <section className="text-center  ">
-        <h1 className="font-bold text-[2rem] lg:text-[3rem] ">
+        <h1 className="font-bold text-[2rem] lg:text-[3rem] max-w-[25ch] mx-auto ">
           Empowering Afghanistan’s Future Leaders and Innovators
         </h1>
-        <h5 className="text-[2rem] ">Equipping Youth to:</h5>
-        <TypeAnimation
+        {/* <h5 className="text-[2rem] ">Equipping Youth to:</h5> */}
+        {/* <TypeAnimation
           sequence={[
             "Lead Afghanistan's tech revolution",
             1000,
@@ -20,8 +20,8 @@ function HeroSection() {
           className="text-white text-[1.5rem]"
           wrapper="p"
           speed={50}
-        />
-        <p className="text-[1.5rem] max-w-[45ch]  mx-auto italic mt-10">
+        /> */}
+        <p className="text-[1.5rem] max-w-[45ch]  mx-auto italic mb-14 text-gray-300 mt-2">
           Join us in transforming the future of Afghan youth through digital
           education and entrepreneurship.
         </p>
