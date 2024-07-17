@@ -1,7 +1,5 @@
-import Image from "next/image";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import HeroImage from "@/public/assets/Growth.png";
 
 function HeroSection() {
   return (
