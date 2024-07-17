@@ -3,6 +3,8 @@ import { motion, easeOut } from "framer-motion";
 import { DropdownComponent } from "./dropdown";
 import Link from "next/link";
 import { MobileNavMenu } from "./mobileNavMenu";
+import Image from "next/image";
+import logo from "@/public/assets/logo.png";
 
 function Navbar() {
   const smoothScroll = (targetId: string) => {
@@ -18,7 +20,9 @@ function Navbar() {
       transition={{ duration: 2, ease: easeOut }}
       className=" flex items-center justify-between mx-6 max-w-[80rem] xl:mx-auto mt-4 lg:mt-8"
     >
-      <h1 className="font-bold  lg:text-[48px]">YDTDO.org</h1>
+      {/* <h1 className="font-bold  lg:text-[48px]">YDTDO.org</h1>
+       */}
+      <Image src={logo} alt="" className="h-24 w-24 object-cover" />
       <div className="md:flex  items-center gap-4 hidden">
         <DropdownComponent />
         <Link
