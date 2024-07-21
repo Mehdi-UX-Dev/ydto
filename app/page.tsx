@@ -14,8 +14,6 @@ function Page() {
   return (
     <div>
       <Navbar />
-      {/* <div className="absolute h-screen w-full -z-10   bg-[radial-gradient(circle_at_top_right,rgba(74,134,232,1)0%,rgba(74,134,232,0.1)50%,rgba(74,134,232,0)100%)]"></div> */}
-      {/* <div className="absolute h-screen w-full -z-10   bg-[radial-gradient(circle_at_top_right,rgba(74,134,232,1)0%,rgba(74,134,232,0)100%)]"></div> */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
