@@ -1,5 +1,5 @@
 import React from "react";
-import illus1 from "@/public/assets/illus_1.svg";
+import illus1 from "@/public/assets/illus_1.png";
 import Image from "next/image";
 import growth from "@/public/assets/icon.png";
 import people from "@/public/assets/people.png";

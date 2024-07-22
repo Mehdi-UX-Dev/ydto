@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import map from "@/public/assets/map.png";
+import team from "@/public/assets/team.svg";
 
 function Team() {
   return (
@@ -16,7 +16,7 @@ function Team() {
 
       <div className="flex flex-wrap ">
         <Image
-          src={map}
+          src={team}
           alt="Innovation"
           className=" max-w-[500px] hidden lg:block object-contain"
         />

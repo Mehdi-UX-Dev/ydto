@@ -5,16 +5,20 @@ import linkedin from "@/public/assets/linkedin.svg";
 import instagram from "@/public/assets/instagram.svg";
 import medium from "@/public/assets/medium.svg";
 import { Copyright, Phone } from "lucide-react";
+import Logo from "@/public/assets/logo.png";
 
 function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="px-10 py-10 mt-5 bg-gradient-to-r from-gray-800 to-gray-600">
-      <h1 className="text-[2rem] font-bold">YDTDO.org</h1>
-      <p className="text-[1.5rem]">
-        Teaching the DNA of future from Berlin to Kabul
-      </p>
+    <footer className="px-10 py-10 mt-5  bg-gray-900">
+      <div className="flex gap-4 items-center">
+        <Image src={Logo} alt="Logo" className="w-20 mb-2" />
+        <h3 className="max-w-[25ch]">
+          Youth Digital Training and Development Organization
+        </h3>
+      </div>
+      {/* //todo we need a slogan for the org */}
       <div className="flex items-start gap-8 py-5 lg:text-[1.5rem]">
         <div>
           <p>About Us</p>
@@ -30,19 +34,18 @@ function Footer() {
             <Image src={medium} alt="medium" />
           </div>
           <div className="flex items-center gap-2">
-            <Phone />
+            <Phone className="hidden md:block" />
             <p className="">+49 123456798</p>
           </div>
         </div>
       </div>
       <div className="border-b border-white"></div>
-      <div className="flex flex-col md:flex-row justify-between pt-2 ">
+      <div className="flex flex-col md:flex-row justify-between items-center pt-2 ">
         <div className="flex gap-1 text-[1.5rem] items-center">
-          <p>YDTDO.org</p>
+          <p>ydtdo.org</p>
           <Copyright /> <p>{year}</p>
         </div>
         <div className="md:flex gap-2 ">
-          <p className="underline">IMPRINT</p>
           <p className="underline">DISCLAIMER</p>
           <p className="underline">PRIVACY POLICY</p>
         </div>

@@ -17,12 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          inter.variable
-        )}
+        className={cn("min-h-scree bg-background font-sans ", inter.variable)}
       >
-        <main>{children}</main>
+        <div className="absolute h-screen w-full -z-10 bg-[radial-gradient(circle_at_top_right,rgba(108,99,255,0.7)0%,rgba(108,99,255,0.1)50%,rgba(108,99,255,0)100%)]"></div>
+        {children}
         <Toaster />
       </body>
     </html>
