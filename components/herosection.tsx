@@ -13,25 +13,13 @@ function HeroSection() {
         <h1 className="font-bold text-[2rem]  lg:text-[3rem] max-w-[25ch] mx-auto ">
           Empowering Afghanistan’s Future Leaders and Innovators
         </h1>
-        {/* <h5 className="text-[2rem] ">Equipping Youth to:</h5> */}
-        {/* <TypeAnimation
-          sequence={[
-            "Lead Afghanistan's tech revolution",
-            1000,
-            "Skills to Succeed",
-            1000,
-          ]}
-          repeat={Infinity}
-          className="text-white text-[1.5rem]"
-          wrapper="p"
-          speed={50}
-        /> */}
+
         <p className="text-[1.5rem] max-w-[45ch]  mx-auto italic mb-14 text-gray-300 mt-2">
           Join us in transforming the future of Afghan youth through digital
           education and entrepreneurship.
         </p>
         <div className="flex justify-center ">
-          <button className="w-64 h-20 relative mt-4 cursor-pointer ">
+          <button className="w-64 h-20 relative mt-4 cursor-pointer hover:scale-110">
             <span className="highlight "></span>
             <span className="text text-[1.5rem]">Get Involved</span>
           </button>

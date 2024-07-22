@@ -63,7 +63,7 @@ function Contact() {
         <DialogTrigger asChild>
           <button
             onClick={() => setDialogVisiblity(true)}
-            className="bg-gray-700 rounded-[8px]   px-16 py-5 lg:text-[1.5rem]  mt-10  "
+            className="bg-gray-700 rounded-[8px] hover:bg-gray-800 hover:scale-110   px-16 py-5 lg:text-[1.5rem]  mt-10  "
           >
             Contact Us
           </button>
@@ -126,7 +126,7 @@ function Contact() {
                 <button
                   disabled={loading}
                   type="submit"
-                  className="w-full disabled:bg-gray-400 disabled:opacity-50 bg-gray-600 h-12 rounded-[8px] flex justify-center items-center gap-2 "
+                  className="w-full disabled:bg-gray-400 disabled:opacity-50 bg-gray-600 h-12 rounded-[8px] flex justify-center items-center gap-2 hover:bg-gray-800  "
                 >
                   {loading ? (
                     <LoaderCircle className={`h-5 w-5 animate-spin `} />
