@@ -5,7 +5,7 @@ import linkedin from "@/public/assets/linkedin.svg";
 import instagram from "@/public/assets/instagram.svg";
 import medium from "@/public/assets/medium.svg";
 import { Copyright, Phone } from "lucide-react";
-import Logo from "@/public/assets/logo.png";
+import Logo from "@/public/assets/logo.svg";
 
 function Footer() {
   const year = new Date().getFullYear();

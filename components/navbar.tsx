@@ -4,7 +4,7 @@ import { DropdownComponent } from "./dropdown";
 import Link from "next/link";
 import { MobileNavMenu } from "./mobileNavMenu";
 import Image from "next/image";
-import logo from "@/public/assets/logo.png";
+import logo from "@/public/assets/logo.svg";
 
 function Navbar() {
   const smoothScroll = (targetId: string) => {
@@ -20,7 +20,9 @@ function Navbar() {
       transition={{ duration: 2, ease: easeOut }}
       className=" flex items-center justify-between mx-6 max-w-[80rem] xl:mx-auto  pt-4 lg:pt-8"
     >
-      <Image src={logo} alt="" className="h-24 w-24 object-cover" />
+      <Image src={logo} alt="" className=" object-cover" />
+      <p>Youth Digital Training and Developement Organization</p>
+      <p></p>
       <div className="md:flex  items-center gap-4 hidden">
         <DropdownComponent />
         <Link
