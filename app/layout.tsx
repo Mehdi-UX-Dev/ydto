@@ -19,6 +19,7 @@ export default function RootLayout({
       <body
         className={cn("min-h-scree bg-background font-sans ", inter.variable)}
       >
+        {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
         <div className="absolute h-screen w-full -z-10 bg-[radial-gradient(circle_at_top_right,rgba(108,99,255,0.7)0%,rgba(108,99,255,0.1)50%,rgba(108,99,255,0)100%)]"></div>
         {children}
         <Toaster />
