@@ -20,9 +20,15 @@ function Navbar() {
       transition={{ duration: 2, ease: easeOut }}
       className=" flex items-center justify-between mx-6 max-w-[80rem] xl:mx-auto  pt-4 lg:pt-8"
     >
-      <Image src={logo} alt="" className=" object-cover" />
-      <p>Youth Digital Training and Developement Organization</p>
-      <p></p>
+      <div className="flex items-center gap-4">
+        <Image src={logo} alt="" className="h-20 w-20 object-cover" />
+        <div className="flex flex-col items-end">
+          <p className="w-[25ch]">
+            Youth Digital Training and Developement Organization
+          </p>
+          <p>د ځوانانو د ډیجیټل زده کړی او پرمختګ موسسه</p>
+        </div>
+      </div>
       <div className="md:flex  items-center gap-4 hidden">
         <DropdownComponent />
         <Link
