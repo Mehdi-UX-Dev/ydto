@@ -15,8 +15,9 @@ function HeroSection() {
         </h1>
 
         <p className="text-[1.5rem] max-w-[45ch]  mx-auto italic mb-14 text-gray-300 mt-2">
-          Join us in transforming the future of Afghan youth through digital
-          education and entrepreneurship.
+          we colloborate with prestigious organizations to empower and nurture
+          youth of Afghanistan for a better future through digital education and
+          entrepreneurship.
         </p>
         <div className="flex justify-center ">
           <button className="w-64 h-20 relative mt-4 cursor-pointer hover:scale-110">

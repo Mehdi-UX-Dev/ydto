@@ -29,8 +29,19 @@ function Navbar() {
           <p>د ځوانانو د ډیجیټل زده کړی او پرمختګ موسسه</p>
         </div>
       </div>
-      <div className="md:flex  items-center gap-4 hidden">
-        <DropdownComponent />
+      <div className="md:flex  items-center gap-4 lg:gap-8 hidden">
+        {/* <DropdownComponent /> */}
+
+        <Link href={"#"} className="lg:text-[24px]">
+          Home
+        </Link>
+        <Link href={"#"} className="lg:text-[24px]">
+          Who we are
+        </Link>
+
+        <Link href={"#"} className="lg:text-[24px]">
+          Vacancies
+        </Link>
         <Link
           onClick={(e) => {
             e.preventDefault(), smoothScroll("about");
