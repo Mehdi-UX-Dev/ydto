@@ -21,7 +21,7 @@ function Navbar() {
       className=" flex items-center justify-between mx-6 max-w-[80rem] xl:mx-auto  pt-4 lg:pt-8"
     >
       <div className="flex items-center gap-4">
-        <Image src={logo} alt="" className="h-20 w-20 object-cover" />
+        <Image src={logo} alt="YDTDO" className="w-20 object-cover" />
         <div className="flex flex-col items-end">
           <p className="w-[25ch]">
             Youth Digital Training and Developement Organization
@@ -38,11 +38,13 @@ function Navbar() {
         <Link href={"#"} className="lg:text-[24px]">
           Who we are
         </Link>
-
         <Link href={"#"} className="lg:text-[24px]">
-          Vacancies
+          What we do
         </Link>
-        <Link
+        {/* <Link href={"#"} className="lg:text-[24px]">
+          Vacancies
+        </Link> */}
+        {/* <Link
           onClick={(e) => {
             e.preventDefault(), smoothScroll("about");
           }}
@@ -50,7 +52,7 @@ function Navbar() {
           className="lg:text-[24px]"
         >
           About Us
-        </Link>
+        </Link> */}
         <Link
           href={"#contact"}
           className="lg:text-[24px]"
@@ -60,6 +62,11 @@ function Navbar() {
         >
           Contact Us
         </Link>
+
+        <button className="w-[12rem] h-16 relative  cursor-pointer hover:scale-110">
+          <span className="highlight "></span>
+          <span className="text   text-[1.5rem]">Apply Now</span>
+        </button>
       </div>
 
       <MobileNavMenu />
