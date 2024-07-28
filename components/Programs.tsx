@@ -7,6 +7,9 @@ function Programs() {
   const isInView = useInView(ref, { amount: 0.5 });
   return (
     <div className="grid grid-cols-2 max-w-5xl xl:mx-auto mx-6  gap-8">
+      <div className="col-span-2 text-center">
+        <h1 className="text-[5rem] font-bold">What We Do</h1>
+      </div>
       <motion.div
         ref={ref}
         initial={{ opacity: 0 }}
