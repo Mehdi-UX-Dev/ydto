@@ -32,9 +32,9 @@ function Navbar() {
       <div className="md:flex  items-center gap-4 lg:gap-8 hidden">
         {/* <DropdownComponent /> */}
 
-        <Link href={"#"} className="lg:text-[24px]">
+        {/* <Link href={"#"} className="lg:text-[24px]">
           Home
-        </Link>
+        </Link> */}
         <Link href={"#"} className="lg:text-[24px]">
           Who we are
         </Link>

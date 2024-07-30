@@ -1,5 +1,5 @@
 import React from "react";
-import illus1 from "@/public/assets/illus_1.png";
+import goals from "@/public/assets/goals.svg";
 import Image from "next/image";
 import growth from "@/public/assets/icon.png";
 import people from "@/public/assets/people.png";
@@ -25,9 +25,9 @@ function Info() {
           </section>
 
           <Image
-            src={illus1}
+            src={goals}
             alt="Innovation"
-            className="  hidden lg:block lg:col-span-6 justify-self-center"
+            className="  hidden lg:block lg:col-span-6 justify-self-center w-[500px]"
           />
         </div>
       </div>

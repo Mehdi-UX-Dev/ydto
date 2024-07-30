@@ -4,7 +4,7 @@ import giz from "@/public/assets/giz.png";
 import wfp from "@/public/assets/wfp.svg";
 import corp from "@/public/assets/corps.png";
 import mrastah from "@/public/assets/mrastajh.jpg";
-import growth from "@/public/assets/Growth.png";
+import heroSectionImage from "@/public/assets/heroSection_illustration.svg";
 
 function HeroSection() {
   return (
@@ -15,7 +15,7 @@ function HeroSection() {
             Empowering Afghanistan’s Future Leaders and Innovators
           </h1>
 
-          <p className="text-[1.5rem] max-w-[45ch]  mx-auto italic mb-14 text-gray-300 mt-2">
+          <p className="text-[1.5rem]   italic mb-14 text-gray-300 mt-2">
             we colloborate with prestigious organizations to empower and nurture
             youth of Afghanistan for a better future through digital education
             and entrepreneurship.
@@ -25,7 +25,11 @@ function HeroSection() {
           </div> */}
         </section>
 
-        <Image src={growth} alt="Transformation" />
+        <Image
+          src={heroSectionImage}
+          alt="heroSectionImage"
+          className="h-fit w-[520px]"
+        />
       </div>
 
       <div className="flex mt-10  items-center flex-col md:flex-row ">
