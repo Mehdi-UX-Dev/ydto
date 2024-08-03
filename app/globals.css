@@ -43,14 +43,6 @@
   }
 }
 
-/* .button-content {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  padding: 0 6px;
-} */
-
 .highlight {
   position: absolute;
   top: 1px;

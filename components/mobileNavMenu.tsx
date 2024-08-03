@@ -1,4 +1,4 @@
-import { Building2, Calendar, GraduationCap, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 
 import {
   DropdownMenu,
@@ -7,8 +7,15 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Link from "next/link";
 
 export function MobileNavMenu() {
+  const smoothScroll = (targetId: string) => {
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -16,16 +23,25 @@ export function MobileNavMenu() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuItem>
-          <GraduationCap className="mr-2 h-4 w-4" />
-          <span>Academy</span>
+          <Link href={"#"} className="lg:text-[24px]">
+            Who we are
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Building2 className="mr-2 h-4 w-4" />
-          <span>Business Incubation</span>
+          <Link href={"#"} className="lg:text-[24px]">
+            What we do
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Calendar className="mr-2 h-4 w-4" />
-          <span>Academy</span>
+          <Link
+            href={"#contact"}
+            className="lg:text-[24px]"
+            onClick={(e) => {
+              e.preventDefault(), smoothScroll("contact");
+            }}
+          >
+            Contact Us
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
       </DropdownMenuContent>

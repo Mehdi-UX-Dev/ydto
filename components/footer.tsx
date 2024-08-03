@@ -6,6 +6,7 @@ import instagram from "@/public/assets/instagram.svg";
 import medium from "@/public/assets/medium.svg";
 import { Copyright, Phone } from "lucide-react";
 import Logo from "@/public/assets/logo.svg";
+import Link from "next/link";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -35,7 +36,9 @@ function Footer() {
           </div>
           <div className="flex items-center gap-2">
             <Phone className="hidden md:block" />
-            <p className="">+49 123456798</p>
+            <Link href={"tel:+93744063886"} type="">
+              +93 744063886
+            </Link>
           </div>
         </div>
       </div>
