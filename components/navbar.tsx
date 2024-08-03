@@ -22,14 +22,14 @@ function Navbar() {
     >
       <div className="flex items-center gap-4">
         <Image src={logo} alt="YDTDO" className="w-20 object-cover" />
-        <div className="md:flex flex-col items-end hidden ">
+        <div className="lg:flex flex-col items-end hidden ">
           <p className="w-[25ch]">
             Youth Digital Training and Developement Organization
           </p>
           <p>د ځوانانو د ډیجیټل زده کړی او پرمختګ موسسه</p>
         </div>
       </div>
-      <div className="md:flex  items-center gap-4 lg:gap-8 hidden">
+      <div className="xl:flex  items-center gap-4 lg:gap-8 hidden">
         <Link href={"#"} className="lg:text-[24px]">
           Who we are
         </Link>
@@ -46,14 +46,15 @@ function Navbar() {
         >
           Contact Us
         </Link>
+      </div>
 
-        <button className="w-[12rem]  h-16 relative  cursor-pointer hover:scale-110  ">
+      <div className="flex items-center gap-8">
+        <button className="w-[12rem] hidden sm:block  h-16 relative  cursor-pointer hover:scale-110  ">
           <span className="highlight "></span>
           <span className="text   text-[1.5rem]">Apply Now</span>
         </button>
+        <MobileNavMenu />
       </div>
-
-      <MobileNavMenu />
     </motion.nav>
   );
 }

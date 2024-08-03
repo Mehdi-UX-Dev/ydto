@@ -19,7 +19,7 @@ export function MobileNavMenu() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Menu className="md:hidden" size={32} />
+        <Menu className="xl:hidden" size={32} />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuItem>

@@ -9,16 +9,16 @@ function Info() {
   return (
     <div id="about" className="space-y-[240px] ">
       <div className=" bg-gray-800 py-10">
-        <div className="max-w-[90rem] grid grid-cols-12 mx-6 lg:mx-auto items-center">
-          <div className="col-span-12 text-center">
-            <h1 className="text-[5rem] font-bold">Our Vision</h1>
-          </div>
+        <div className="max-w-[90rem] grid grid-cols-12 mx-6 xl:mx-auto items-center">
           <section className="text-center lg:text-left col-span-12 lg:col-span-6">
-            <h1 className="text-[1.5rem] lg:text-[2rem] font-bold  ">
+            <h1 className="text-[2rem] font-bold bg-blue-400 w-fit px-4 py-2 mb-8">
+              Our Vision
+            </h1>
+            <h1 className="text-[1.5rem] lg:text-[2rm] font-bold  mb-1 ">
               Youth Potential Unleashed By Digital Education and
               Entrepreneurship
             </h1>
-            <p className="mx-auto lg:mx-0 lg:text-[1.5rem]">
+            <p className="mx-auto lg:mx-0 lg:text-[1.rem]">
               We support local talent aiming to make a positive impact and lead
               Afghanistan with technical skills and digital innovation.
             </p>
@@ -33,10 +33,10 @@ function Info() {
       </div>
 
       <div className="max-w-[90rem] mx-auto">
-        <div className="text-center">
-          <h1 className="text-[5rem] font-bold">Our Mission</h1>
-        </div>
         <section className="text-center lg:text-left mx-6">
+          <h1 className="text-[2rem] font-bold bg-blue-400 w-fit px-4 py-2 mb-8">
+            Our Mission
+          </h1>
           <h1 className="text-[1.5rem] font-bold lg:text-[3rem] ">
             Leading the Change: Revolutionizing Afghanistan&apos;s Future
             Through Education

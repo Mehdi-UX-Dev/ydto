@@ -11,7 +11,7 @@ import { MoveRight } from "lucide-react";
 function HeroSection() {
   return (
     <div className="flex flex-col items-center">
-      <div className="max-w-[80rem]   lg:mx-auto  items-center mx-6 lg: lg:h-[75vh] flex justify-between ">
+      <div className="max-w-[80rem]   xl:mx-auto  items-center mx-6     lg:h-[75vh] flex justify-between ">
         <section className=" grow flex flex-col   justify-center ">
           <h1 className="font-bold text-[2rem] text-center lg:text-left lg:text-[3rem] max-w-[25ch] mx-auto ">
             Empowering Afghanistan’s Future Leaders and Innovators
