@@ -12,13 +12,13 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-export function DropdownComponent() {
+export function WhatWeDo() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="lg:text-[24px]">
-            Programs
+            What We Do
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6  md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">

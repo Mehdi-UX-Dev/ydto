@@ -1,11 +1,12 @@
 import React from "react";
 import { motion, easeOut } from "framer-motion";
-import { DropdownComponent } from "./dropdown";
+import { WhatWeDo } from "./whatWeDo";
 import Link from "next/link";
 import { MobileNavMenu } from "./mobileNavMenu";
 import Image from "next/image";
 import logo from "@/public/assets/logo.svg";
 import { usePathname } from "next/navigation";
+import { WhoWeAre } from "./whoWeAre";
 
 function Navbar() {
   const smoothScroll = (targetId: string) => {
@@ -33,12 +34,8 @@ function Navbar() {
         </div>
       </div>
       <div className="xl:flex  items-center gap-4 lg:gap-8 hidden">
-        <Link href={"#"} className="lg:text-[24px]">
-          Who we are
-        </Link>
-        <Link href={"#"} className="lg:text-[24px]">
-          What we do
-        </Link>
+        <WhoWeAre />
+        <WhatWeDo />
 
         <Link
           href={"#contact"}
