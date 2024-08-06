@@ -1,9 +1,14 @@
-import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
 import { cn } from "@/lib/utils";
+import Head from "next/head";
+import ClientLayout from "./clientLayout";
+
+interface Metadata {
+  title: string;
+  description: string;
+}
 
 export const metadata: Metadata = {
   title: "YDTDO - Youth Digital Training and Development Organization",
@@ -17,9 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </Head>
       <body className={cn(" bg-background font-sans ", montserrat.variable)}>
-        {children}
-        <Toaster />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

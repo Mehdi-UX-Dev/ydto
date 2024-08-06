@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 function Page() {
   return (
     <div>
-      <Navbar />
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -25,7 +24,6 @@ function Page() {
         <Team />
         <Contact />
       </motion.div>
-      <Footer />
     </div>
   );
 }

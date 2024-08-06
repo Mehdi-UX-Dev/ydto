@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MobileNavMenu } from "./mobileNavMenu";
 import Image from "next/image";
 import logo from "@/public/assets/logo.svg";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
   const smoothScroll = (targetId: string) => {
@@ -13,6 +14,8 @@ function Navbar() {
       target.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const path = usePathname();
   return (
     <motion.nav
       initial={{ opacity: 0, y: -40 }}
@@ -49,10 +52,16 @@ function Navbar() {
       </div>
 
       <div className="flex items-center gap-8">
-        <button className="w-[12rem] hidden sm:block  h-16 relative  cursor-pointer hover:scale-110  ">
-          <span className="highlight "></span>
-          <span className="text   text-[1.5rem]">Apply Now</span>
-        </button>
+        {path !== "/apply" && (
+          <Link
+            href={"/apply"}
+            className="w-[12rem] hidden sm:block  h-16 relative  cursor-pointer hover:scale-110  "
+          >
+            <span className="highlight "></span>
+            <span className="text   text-[1.5rem]">Apply Now</span>
+          </Link>
+        )}
+
         <MobileNavMenu />
       </div>
     </motion.nav>
