@@ -1,3 +1,4 @@
+import Form from "@/components/formField";
 import React from "react";
 
 function Page() {
@@ -11,43 +12,7 @@ function Page() {
             you as soon as possible.
           </p>
         </div>
-        <form className="max-w-md mx-auto space-y-8 mt-8">
-          <div>
-            <label htmlFor="name">Name</label>
-            <input
-              id="name"
-              type="text"
-              className="border h-12 w-full bg-gray-700 mt-1"
-            />
-          </div>
-          <div>
-            <label htmlFor="lastName">Last Name</label>
-            <input
-              id="lastName"
-              type="text"
-              className="border h-12 w-full bg-gray-700 mt-1"
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input
-              id="email"
-              type="text"
-              className="border h-12 w-full bg-gray-700 mt-1"
-            />
-          </div>
-          <div>
-            <label htmlFor="phone">Phone Number</label>
-            <input
-              id="phone"
-              type="email"
-              className="border h-12 w-full bg-gray-700 mt-1"
-            />
-          </div>
-          <button className="border border-gray-400 font-bold text-[1.25rem] text-center w-full py-4 ">
-            Submit
-          </button>
-        </form>
+        <Form />
       </div>
     </div>
   );
