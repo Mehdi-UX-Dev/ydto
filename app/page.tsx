@@ -20,8 +20,8 @@ function Page() {
         className=" mt-10 lg:mt-[40px]  space-y-[120px] lg:space-y-[240px]  mb-[240px]"
       >
         <HeroSection />
-        <Info />
         <Programs />
+        <Info />
         <Team />
         <Contact />
       </motion.div>
