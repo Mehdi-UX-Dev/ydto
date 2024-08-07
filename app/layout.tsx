@@ -22,10 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-      </Head>
       <body className={cn(" bg-background font-sans ", montserrat.variable)}>
         <ClientLayout>{children}</ClientLayout>
       </body>
