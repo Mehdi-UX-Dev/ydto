@@ -26,6 +26,10 @@ export function WhoWeAre() {
                 Our board of directors, consistently striving to bring a postive
                 impact to the Afghanistan.
               </ListItem>
+              <ListItem href="/achievements" title="Achievements">
+                Fostering Change, the story of how we helped to shape
+                Afghanistan.
+              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

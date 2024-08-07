@@ -63,7 +63,7 @@ function Contact() {
         <DialogTrigger asChild>
           <button
             onClick={() => setDialogVisiblity(true)}
-            className="bg-gray-700 rounded-[8px] hover:bg-gray-800 hover:scale-110   px-16 py-5 lg:text-[1.5rem]  mt-10  "
+            className="bg-bluePrimary font-bold  rounded-[8px] hover:bg-gray-800 hover:scale-110   px-16 py-5 lg:text-[1.5rem]  mt-10  "
           >
             Contact Us
           </button>

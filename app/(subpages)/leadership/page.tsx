@@ -30,7 +30,7 @@ function Page() {
         </div>
       </div>
       <div className="w-full border-t border-gray-700 h-1 max-w-[60rem] mx-auto my-[120px]" />
-      <div className="max-w-[80rem] mx-auto relative">
+      <div className="max-w-[80rem] mx-auto relative mb-[120px]">
         <h1 className="text-[2rem] font-bold mb-10 text-center">Our Board</h1>
         <div className="flex gap-8  overflow-x-auto scrollbar-thin !scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-gray-700 scrollbar-track-slate-500 ">
           <div className="shrink-0 ">
